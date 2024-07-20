@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      lm_labs_generator:
+        generate_for:
+          - "lib/**_routes.dart"
+
+builders:
+  routes:
+    import: "package:lm_labs_generator/builder.dart"
+    builder_factories: ["routes"]
+    build_extensions: { ".dart": ["routes.g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
+    required_inputs: ["**_routes.dart"]
