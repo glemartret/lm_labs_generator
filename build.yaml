@@ -7,7 +7,7 @@ targets:
 
 builders:
   routes:
-    import: "package:lm_labs_generator/builder.dart"
+    import: "package:lm_labs_generator/lm_labs_generator.dart"
     builder_factories: ["routes"]
     build_extensions: { ".dart": ["routes.g.part"] }
     auto_apply: dependents
