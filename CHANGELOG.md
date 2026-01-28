@@ -1,3 +1,8 @@
+## 1.0.0
+
+* Stable release
+* Update dependencies and Dart SDK to 3.10.7
+
 ## 0.0.2
 
 * Update deps and dart to 3.7

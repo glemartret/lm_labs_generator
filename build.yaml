@@ -3,7 +3,7 @@ targets:
     builders:
       lm_labs_generator:
         generate_for:
-          - "lib/**_routes.dart"
+          - "lib/**.routes.dart"
 
 builders:
   routes:
@@ -13,4 +13,4 @@ builders:
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]
-    required_inputs: ["**_routes.dart"]
+    required_inputs: ["**.routes.dart"]

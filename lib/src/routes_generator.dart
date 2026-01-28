@@ -14,9 +14,14 @@ class RoutesGenerator extends Generator {
             .firstOrNull
             ?.camelCase;
 
-    if (featureName == null) {
+    if (featureName == null || featureName == 'app') {
       return null;
     }
+
+    // final topLevelVars = library.element.topLevelVariables;
+    // if (!topLevelVars.any((v) => v.name3 == r'$appRoutes')) {
+    //   return null;
+    // }
 
     return '''
   List<RouteBase> get \$${featureName}Routes => \$appRoutes;
