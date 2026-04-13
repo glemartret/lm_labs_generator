@@ -7,12 +7,11 @@ import 'package:source_gen/source_gen.dart';
 class RoutesGenerator extends Generator {
   @override
   FutureOr<String?> generate(LibraryReader library, BuildStep buildStep) {
-    final featureName =
-        buildStep.inputId.pathSegments
-            .skipWhile((part) => part != 'features')
-            .skip(1)
-            .firstOrNull
-            ?.camelCase;
+    final featureName = buildStep.inputId.pathSegments
+        .skipWhile((part) => part != 'features')
+        .skip(1)
+        .firstOrNull
+        ?.camelCase;
 
     if (featureName == null || featureName == 'app') {
       return null;
