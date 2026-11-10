@@ -1,3 +1,6 @@
+## 3.0.1
+* Allows build 5.0.0
+
 ## 3.0.0
 * Stable release
 * Update dependencies and Dart SDK to 3.13.0

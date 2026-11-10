@@ -2,14 +2,14 @@ name: lm_labs_generator
 description: Some code generators used by LM Labs.
 repository: https://github.com/glemartret/lm_labs_generator
 issue_tracker: https://github.com/glemartret/lm_labs_generator/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
-version: 3.0.0
+version: 3.0.1
 
 environment:
   sdk: ">=3.13.0 <4.0.0"
 
 dependencies:
-  analyzer: ^14.1.0
-  build: ">=2.0.0 <5.0.0"
+  analyzer: ">=13.3.0 <15.0.0"
+  build: ">=2.0.0 <6.0.0"
   recase: ^4.1.0
   source_gen: ">=2.0.0 <5.0.0"
 
